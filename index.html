@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<title>Family</title>
+</head>
+<body>
+	<header>
+		<div class="con-h wrap">
+			<div class="burger" id='bur'>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="menu" id='menu'>
+				<span>Узнать о:</span>
+				<ul>
+					<li><a href="ivan.html">Жирнов Иван</a></li>
+					<li><a href="hadji.html">Хаджирамазан Казибеков</a></li>
+					<li><a href="idar.html">Идар Жаманов</a></li>
+					<li><a href="maga.html">Магомед Рамазнов</a></li>
+				</ul>
+			</div>
+			<div class="them" id='them'>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="con-m wrap" id='con-m'>
+			<h1>
+				Добро пожаловать в семью!
+			</h1>
+		</div>
+		<div class="con-con" id='con-con'>
+			<div class="con-m2 wrap swiper mySwiper">
+				<div class="conteiner swiper-wrapper">
+					<div class="card swiper-slide">
+						<div class='img hadji'></div>
+						<h2>Хаджирамазан Казибеков 17 лет <a href="hadji.html">Подробнее</a></h2>
+					</div>
+					<div class="card swiper-slide">
+						<div class='img idar'></div>
+						<h2>Идар Жаманов 17 лет <a href="idar.html">Подробнее</a></h2>
+					</div>
+					<div class="card swiper-slide">
+						<div class='img ivan'></div>
+						<h2>Жирнов Иван 17 лет <a href="ivan.html">Подробнее</a></h2>
+					</div>
+					<div class="card swiper-slide">
+						<div class='img maga'></div>
+						<h2>Магомед Рамазанов 17 лeт <a href="maga.html">Подробнее</a></h2>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</main>
+	<div class="con"></div>
+	<script src='js/main.js'></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script>
+    let swiper = new Swiper(".mySwiper", {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+		});
+  </script>
+</body>
+</html>
